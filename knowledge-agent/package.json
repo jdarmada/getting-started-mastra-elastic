@@ -1,5 +1,5 @@
 {
-  "name": "support-agent",
+  "name": "knowledge-agent",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,11 +17,13 @@
     "node": ">=20.9.0"
   },
   "dependencies": {
+    "@elastic/elasticsearch": "^9.2.0",
     "@mastra/core": "^0.23.3",
     "@mastra/evals": "^0.14.2",
     "@mastra/libsql": "^0.16.1",
     "@mastra/loggers": "^0.10.18",
     "@mastra/memory": "^0.15.10",
+    "dotenv": "^17.2.3",
     "zod": "^4.1.12"
   },
   "devDependencies": {
