@@ -17,6 +17,7 @@
     "node": ">=20.9.0"
   },
   "dependencies": {
+    "@ai-sdk/openai": "^2.0.63",
     "@elastic/elasticsearch": "^9.2.0",
     "@mastra/core": "^0.23.3",
     "@mastra/evals": "^0.14.2",
