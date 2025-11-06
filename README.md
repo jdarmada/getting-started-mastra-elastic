@@ -1,14 +1,12 @@
 # Knowledge Agent with Elasticsearch & Mastra
 
-An unofficial integration showcasing **Elasticsearch** as a vector database for **Mastra's** semantic recall capabilities. This project demonstrates how to build an intelligent knowledge assistant that remembers context across conversations using Elasticsearch's powerful vector search capabilities.
+An unofficial integration showcasing **Elasticsearch** as a vector database for **Mastra's** semantic recall feature. This project demonstrates how to build a knowledge assistant that remembers context across conversations using Elasticsearch's vector search capabilities.
 
 This knowledge agent uses:
 - **Mastra** - AI agent framework with memory capabilities
 - **Elasticsearch** - Vector database for semantic search and recall
 - **OpenAI** - GPT-4o for language understanding and text embeddings
 - **Semantic Recall** - Retrieves contextually relevant past messages to enhance responses
-
-The agent automatically stores conversation history as vector embeddings in Elasticsearch, enabling it to recall relevant past context when answering new questions.
 
 
 ## What you need
@@ -84,20 +82,6 @@ Once running, you'll be able to chat with your agent using Mastra's built-in age
 4. **Includes surrounding context** (2 messages before/after each match)
 5. **Provides informed responses** based on conversation history
 
-### Semantic Recall Configuration
-
-The agent is configured with these memory settings (in `src/mastra/agents/knowledge-agent.ts`):
-
-```typescript
-semanticRecall: {
-    topK: 3,          // Retrieve 3 most similar messages
-    messageRange: 2,  // Include 2 messages before/after each match
-    scope: 'resource' // Scope of recall
-}
-```
-
-You can adjust these parameters to control memory behavior.
-
 ## Architecture
 
 ```
@@ -154,11 +138,6 @@ The custom `ElasticVector` class (in `src/mastra/stores/elastic-store.ts`) imple
 - **Semantic Search**: Uses cosine similarity for finding relevant messages
 - **Metadata Filtering**: Supports filtering queries by metadata fields
 
-### Key Features
-
-1. **Automatic Index Creation**: Creates indices with proper vector field mappings
-2. **Bulk Operations**: Efficiently upserts multiple vectors at once
-3. **Flexible Queries**: Supports k-nearest neighbor search with optional filters
 
 ## Troubleshooting
 
