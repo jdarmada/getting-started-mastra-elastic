@@ -1,4 +1,3 @@
-// src/mastra/agents/knowledge-agent.ts
 import { Agent } from '@mastra/core/agent';
 import { Memory } from '@mastra/memory';
 import { openai } from '@ai-sdk/openai';
