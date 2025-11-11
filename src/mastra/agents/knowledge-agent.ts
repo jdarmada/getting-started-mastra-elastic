@@ -40,6 +40,8 @@ const vectorStore = new ElasticVector({
   auth: {
     apiKey: ELASTICSEARCH_API_KEY,
   },
+//Optional: Explicitly set to true if using Elasticsearch Serverless to skip auto-detection and improve startup time
+//isServerless: true,
 });
 
 export const knowledgeAgent = new Agent({
