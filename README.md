@@ -12,7 +12,7 @@ This knowledge agent uses:
 ## What you need
 
 - **Node.js** v18+
-- **Elasticsearch** instance (version 8.15 or newer). Either a local instance or a hosted deployment on Elastic Cloud. Serverless not currently supported.
+- **Elasticsearch** instance (version 8.15 or newer)
 - **Elasticsearch API Key**
 - **OpenAI API key**
 
